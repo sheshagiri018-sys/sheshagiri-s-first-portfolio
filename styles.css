@@ -1,0 +1,29 @@
+
+/* PCB Background Enhancement */
+body::before{
+content:"";
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+background-image:
+linear-gradient(rgba(0,255,170,0.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,255,170,0.05) 1px, transparent 1px);
+background-size:80px 80px;
+pointer-events:none;
+z-index:-2;
+}
+body::after{
+content:"";
+position:fixed;
+top:-50%;left:-50%;
+width:200%;height:200%;
+background:radial-gradient(circle, rgba(0,255,170,0.08), transparent 60%);
+animation:moveGlow 15s linear infinite;
+pointer-events:none;
+z-index:-1;
+}
+@keyframes moveGlow{
+0%{transform:translate(-10%,-10%);}
+50%{transform:translate(10%,10%);}
+100%{transform:translate(-10%,-10%);}
+}
