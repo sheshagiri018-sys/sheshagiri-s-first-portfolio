@@ -63,7 +63,7 @@ This portfolio serves as the **base version** for upcoming upgrades, including:
 * 🎨 Creative Visual Effects
 * 📊 Better Project Showcases
 
-## 📌 Project Status
+## 📌 Project Status*
 
 ✅ Completed Successfully
 
